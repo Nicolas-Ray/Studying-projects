@@ -13,7 +13,7 @@ def is_valid(number):
 
 def game(num, flag, counter):
     while not flag:
-        answer = int(input())
+        answer = int(input('Ваш ответ - '))
         if not is_valid(answer):
             print('Неверный тип данных или число в непраильном диапазоне!')
             counter += 1
@@ -35,7 +35,8 @@ def game(num, flag, counter):
     print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
 
 
-num = randint(1, 100)
+n = int(input('Введите диапазон - '))
+num = randint(1, n)
 flag = False
 counter = 0
 
@@ -44,9 +45,14 @@ game(num, flag, counter)
 restart = input('Хотите начать заново? Да/Нет - ')
 
 if restart == 'Да' or restart == 'да':
+    n = int(input('Введите диапазон - '))
+    num = randint(1, n)
+    flag = False
+    counter = 0
     game(num, flag, counter)
 elif restart == 'Нет' or restart == 'нет':
     exit(0)
 else:
     print('Неверное значение, попробуйте еще раз.')
 restart = input('Хотите начать заново? Да/Нет - ')
+
