@@ -2,9 +2,11 @@
 from random import *
 
 print('Игра - Угадайка чисел')
-num = randint(1, 100)
+num = randint(1, 100) 
 flag = False
 
+
+# Valid check function
 
 def is_valid(number):
     if 101 > number > 0 and isinstance(number, int) == True:
@@ -12,6 +14,7 @@ def is_valid(number):
     else:
         return False
     
+# Guess user number
 
 while not flag:
     answer = int(input())
