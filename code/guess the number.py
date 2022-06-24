@@ -4,6 +4,7 @@ from random import randint
 print('Игра - Угадайка чисел')
 
 
+# Проверка введенного пользователем числа на валидность
 def is_valid(number):
     if 101 > number > 0 and isinstance(number, int) == True:
         return True
@@ -11,6 +12,7 @@ def is_valid(number):
         return False
 
 
+# Главная функция игры
 def game(num, flag, counter):
     while not flag:
         answer = int(input('Ваш ответ - '))
@@ -35,6 +37,7 @@ def game(num, flag, counter):
     print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
 
 
+# Диапазон чисел
 n = int(input('Введите диапазон - '))
 num = randint(1, n)
 flag = False
@@ -42,6 +45,7 @@ counter = 0
 
 game(num, flag, counter)
 
+# Функция перезапуска
 restart = input('Хотите начать заново? Да/Нет - ')
 
 if restart == 'Да' or restart == 'да':
@@ -55,3 +59,5 @@ elif restart == 'Нет' or restart == 'нет':
 else:
     print('Неверное значение, попробуйте еще раз.')
 restart = input('Хотите начать заново? Да/Нет - ')
+
+
