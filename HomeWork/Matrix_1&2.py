@@ -22,7 +22,6 @@ def make_matrix(m, n):
 
 # Создание матрицы
 outputMatrix = make_matrix(m, n)
-# ЗАДАНИЕ - 1
 
 # Вывод матрицы
 print(outputMatrix)
