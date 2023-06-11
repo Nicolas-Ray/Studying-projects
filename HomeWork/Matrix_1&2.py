@@ -10,14 +10,14 @@ def make_matrix(m, n):
     matrix = []
     for i in range(m):
         # Создания пустой строки
-        column = []
+        row = []
         for j in range(n):
             # Добавление элементов в строку
-            column.append(0)
+            row.append(0)
         # Печать для наглядного вида матрицы
-        print(column)
+        print(row)
         # Добавление строки в патрицу
-        matrix.append(column)
+        matrix.append(row)
     return matrix
 
 # Создание матрицы
@@ -39,16 +39,16 @@ def make_matrix(m, n):
     matrix = []
     for i in range(m):
         # Создания пустой строки
-        column = []
+        row = []
         for j in range(n):
             # Добавление кастомного элимента
             el = int(input('Add element:'))
             # Добавление элементов в строку
-            column.append(el)
+            row.append(el)
         # Печать для наглядного вида матрицы
-        print(column)
+        print(row)
         # Добавление строки в патрицу
-        matrix.append(column)
+        matrix.append(row)
     return matrix
 
 # Создание матрицы
