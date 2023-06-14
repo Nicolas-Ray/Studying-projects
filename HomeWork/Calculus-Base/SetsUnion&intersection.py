@@ -15,4 +15,17 @@ while count != num:
 b = {randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10)}
 
 # Обьединение множеств
+print('Объединение множеств')
 print(a | b)
+
+# Выходное множество пересечения
+outputSet = set()
+
+# Пересечение множеств
+for i in b:
+    if i in a:
+        outputSet.add(i)
+
+# Вывод пересечения
+print('Пересечение множеств')
+print(outputSet)
